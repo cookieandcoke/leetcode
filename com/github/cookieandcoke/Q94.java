@@ -5,20 +5,20 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * 144. Binary Tree Preorder Traversal
- * https://leetcode.com/problems/binary-tree-preorder-traversal/
+ * 94. Binary Tree Inorder Traversal
+ * https://leetcode.com/problems/binary-tree-inorder-traversal/
  */
-public class Q144_Recursive {
-    public List<Integer> preorderTraversal(TreeNode root) {
+public class Q94 {
+    public List<Integer> inorderTraversal(TreeNode root) {
         if(root==null)
             return new ArrayList<>(0);
         if(root.left==null && root.right==null)
             return Collections.singletonList(root.val);
 
         List<Integer> res = new ArrayList<>();
+        res.addAll(inorderTraversal(root.left));
         res.add(root.val);
-        res.addAll(preorderTraversal(root.left));
-        res.addAll(preorderTraversal(root.right));
+        res.addAll(inorderTraversal(root.right));
         return res;
     }
 }
