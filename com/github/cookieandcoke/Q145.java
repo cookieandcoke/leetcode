@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 145. Binary Tree Postorder Traversal
- * https://leetcode.com/problems/binary-tree-postorder-traversal/submissions/
+ * https://leetcode.com/problems/binary-tree-postorder-traversal/
  */
 public class Q145 {
     public List<Integer> postorderTraversal(TreeNode root) {
