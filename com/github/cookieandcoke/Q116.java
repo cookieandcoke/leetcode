@@ -3,6 +3,10 @@ package com.github.cookieandcoke;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 116. Populating Next Right Pointers in Each Node
+ * https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+ */
 public class Q116 {
     public Node connect_bfs(Node root) {
         if(root==null) return null;
